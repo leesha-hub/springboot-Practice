@@ -1,7 +1,11 @@
 package com.leesha.book.springboot.config.auth.dto;
 
 import com.leesha.book.springboot.domain.user.User;
+
+import lombok.Getter;
 import java.io.Serializable;
+
+@Getter
 public class SessionUser implements Serializable{
     private String name;
     private String email;

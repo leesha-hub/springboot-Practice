@@ -5,6 +5,7 @@ import com.leesha.book.springboot.config.auth.dto.SessionUser;
 import com.leesha.book.springboot.domain.user.User;
 
 import com.leesha.book.springboot.config.auth.dto.OAuthAttributes;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
