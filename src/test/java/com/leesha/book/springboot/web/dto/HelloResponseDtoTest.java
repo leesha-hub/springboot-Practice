@@ -1,8 +1,15 @@
 package com.leesha.book.springboot.web.dto;
 
+import com.leesha.book.springboot.web.HelloController;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
+@RunWith(SpringRunner.class)
+@WebMvcTest(controllers = HelloController.class)
 public class HelloResponseDtoTest {
 
     @Test
