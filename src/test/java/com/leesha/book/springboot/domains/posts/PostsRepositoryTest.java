@@ -2,10 +2,12 @@ package com.leesha.book.springboot.domains.posts;
 
 import com.leesha.book.springboot.domain.posts.Posts;
 import com.leesha.book.springboot.domain.posts.PostsRepository;
+import com.leesha.book.springboot.web.PostsApiController;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -15,6 +17,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
+//@WebMvcTest(controllers = PostsApiController.class)
 @SpringBootTest
 public class PostsRepositoryTest {
 
